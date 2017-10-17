@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Spring Boot Thymeleaf Hello World Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css"
+	href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+</head>
+<body>
+	<h2>
+		<span th:text="'App: ' + ${appName}"></span>
+	</h2>
+	<p th:text="'Server address:' + ${serverAddr}"></p>
+	<p th:text="'Server port:' + ${serverPort}"></p>
+	<p th:text="'Heartbeat Msg:' + ${heartbeatMsg}"></p>
+
+	<script type="text/javascript"
+		src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
